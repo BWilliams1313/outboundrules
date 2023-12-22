@@ -2,7 +2,7 @@ resource "aws_autoscaling_group" "app1_asg" {
   name_prefix           = "app1-auto-scaling-group-"
   min_size              = 3
   max_size              = 15
-  desired_capacity      = 4
+  desired_capacity      = 6
   vpc_zone_identifier   = [
     aws_subnet.private-eu-south-2a .id,
     aws_subnet.private-eu-south-2b .id,
